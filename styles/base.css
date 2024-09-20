@@ -1,0 +1,265 @@
+
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*settings*/
+
+footer{
+    margin: auto;
+    text-align: center;
+    background-color: #174E70;
+    color: aliceblue;
+    height: 4rem;
+    padding: 20px;
+    padding-bottom: 70px;
+}
+
+#menu{
+    display: none;
+}
+
+/*General*/
+*{
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    max-width: 300rem;
+}
+
+/*others*/
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+header span{
+    color: #FCF959;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    justify-content: space-around;
+    height: 3rem;
+    background-color: #333333;
+    
+}
+header nav a:hover{
+    background-color: #000000;
+    
+}
+header nav a{
+    justify-content: space-around;
+    color: aliceblue;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+.hero{
+    display: flex;
+    color: aliceblue;
+    background-color: #174E70   ;
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+}
+.hero #profile{
+    width: 200px;
+    height: 100%;
+}
+#profile{
+    width: 20rem;
+    margin: 2rem;
+    grid-row: 2;
+    margin: 55px 20px;
+}
+.box{
+    border: solid #000000 2px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow:  0px 0px 15px #00000052;
+}
+.card{
+    width: 70rem;
+
+}
+ section h2{
+    text-align: center;  
+    color: aliceblue;
+}
+
+section ul li{
+    margin:0px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+aside{
+    grid-column: 2/4;
+    width: 25rem;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#flag{
+    width: 20rem;
+    
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.subtitleBox{
+    background-color: #174E70;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 25px;
+}
+.section2{
+    width: 98rem;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#courseNav{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px auto;
+    
+    
+}
+
+#courseNav a{
+    background-color: #333333;
+    text-decoration: none;
+    color: aliceblue;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    border-radius: 5%;
+   
+}
+.gridCourse{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    border-top: solid 1px #0000005a;
+}
+.gridCourse a{
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    align-content: center;
+    border-radius: 5%;
+}
+.blocked{
+    background-color: #333333;
+
+}
+.actived{
+    background-color: #174E70;
+}
+
+
+@media (max-width: 70rem) {
+   
+    
+    nav {
+        max-width: 700px;
+        margin: 1rem auto;
+
+    }
+    nav a{
+        background-color: #174E70;
+
+     }
+    #menu {
+        display: flex;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top:2vw;
+        right: 2vw;
+        cursor: pointer;
+        }
+        
+    #menu::before {
+        content: "☰";
+        color: #bbb;
+        font-size: 40px;
+        
+    }
+        
+    #menu.open::before {
+        content: "❎";
+    }
+    header{
+        background-color: #174E70;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: #174E70;
+        color: #fff;
+        
+    }
+        
+    .navigation a{
+        display: none;
+        
+    }   
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+        width: 80%;
+    }
+    .open a {
+        display: block;
+        }
+    .open h1{
+        display: none;
+        
+    } 
+    .section1{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0px;
+        row-gap: 40px   ;
+    } 
+    .subtitleBox, .box{
+        width: 100vw;
+        margin: 0;
+    }
+    .gridCourse a{
+        width: 100vw;
+    }
+    ul{
+        margin: 20px;
+    }
+}
