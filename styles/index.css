@@ -25,6 +25,9 @@ footer{
     font-family: 'Poppins', sans-serif;
     max-width: 300rem;
 }
+.navegatio{
+    display: flex;
+}
 
 /*others*/
 
@@ -144,7 +147,7 @@ aside{
     
 }
 
-#courseNav a{
+#courseNav button{
     background-color: #333333;
     text-decoration: none;
     color: aliceblue;
@@ -164,7 +167,9 @@ aside{
     padding-top: 50px;
     border-top: solid 1px #0000005a;
 }
-.gridCourse a{
+.gridCourse p{
+    background-color: #333333;
+
     width: 400px;
     height: 50px;
     text-align: center;
