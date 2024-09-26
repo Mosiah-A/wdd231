@@ -103,7 +103,7 @@ function createCourseElement(filter) {
     gridCourse.innerHTML = ""; // Clear previous content
     filter.forEach(element => {
         const course = document.createElement("p");
-        course.innerText = `${element.subject}  ${element.number}`;
+        course.innerText = `${element.subject}  ${element.number} (${element.credits})`;
         if (element.completed) {
             course.style.backgroundColor = '#174E70'; // Set background color for completed courses
             course.style.color = 'white'; // You might want to set text color for readability
