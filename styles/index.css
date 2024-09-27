@@ -40,6 +40,9 @@ header nav{
     background-color: #333333;
     
 }
+nav{
+    grid-template-rows: 1fr;
+}
 .ulNav{
     display: flex;  
     flex-direction: row;
@@ -192,6 +195,7 @@ aside{
         background-color: #174E70;
         padding: 0;
         margin: 0;
+        
     }   
     .navigation li{
         width: 99vw;
@@ -199,6 +203,7 @@ aside{
 
     }
     .navigation li a{
+        display: block;
         height: 70px;
         align-items: center;
         justify-content: center;
@@ -247,10 +252,8 @@ aside{
         background-color: #174E70;
     }
         
-    .navigation a{
-        display: none;
-        
-    }   
+    
+
     .navigation a:hover {
         background-color: #bbb;
         color: #333;
@@ -258,6 +261,15 @@ aside{
         width: 100%;
     }
     
+    nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out; /* Transição para abrir e fechar */
+    }
+    nav ul  {overflow: hidden;}
+    nav.open {
+        grid-template-rows: 1fr;
+    }
     .section1{
         display: flex;
         flex-direction: column;

@@ -1,11 +1,14 @@
-const mainnav = document.querySelector('.navigation');
+
+// menu settings
 const hambutton = document.querySelector('#menu');
+const mainnav = document.querySelector('.navigation');
 
 hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('open');
     hambutton.classList.toggle('open');
 });
 
+// footer secting
 document.addEventListener('DOMContentLoaded', () => {
     const currentYear = new Date().getFullYear();
     const lastModified = document.lastModified;
