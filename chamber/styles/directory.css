@@ -37,6 +37,9 @@ footer{
 }
 
 /*menu and navigation*/
+nav img{
+    width: 44px;
+}
 header{
     display:block;
 }
