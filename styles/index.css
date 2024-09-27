@@ -257,9 +257,7 @@ aside{
         font-weight: 700;
         width: 100%;
     }
-    .open a {
-        display: block;
-        }
+    
     .section1{
         display: flex;
         flex-direction: column;
