@@ -1,0 +1,18 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;  
+}
+
+/*foofter settings */
+footer{
+    margin: auto;
+    text-align: center;
+    background-color: #174E70;
+    color: aliceblue;
+    height: 4rem;
+    padding: 20px;
+    padding-bottom: 70px;
+}
