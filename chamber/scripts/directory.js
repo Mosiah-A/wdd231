@@ -63,9 +63,7 @@ async function fetchMembers() {
             // Append the member's information to the container
             membersList.appendChild(memberDiv);
         });
-    } catch (error) {
-        console.error('Error fetching the members data:', error);
-    }
+    
 }
 
 // Call the function to fetch and display the members
