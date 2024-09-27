@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Mosiah",
+        "addresses": "tv avenue, 123",
+        "phone numbers": 234567,
+        "website URLs": "https://test.org",
+        "image": "images/mosiah.avif",
+        "membership-level": 1,
+        "other information": "CTO"
+      },
+      {
+        "name": "John",
+        "addresses": "main street, 456",
+        "phone numbers": 123456,
+        "website URLs": "https://johnwebsite.com",
+        "image": "images/Jhon.png",
+        "membership-level": 2,
+        "other information": "none"
+      },
+      {
+        "name": "Sarah",
+        "addresses": "baker street, 789",
+        "phone numbers": 987654,
+        "website URLs": "https://sarahportfolio.com",
+        "image": "images/sarah.jpeg",
+        "membership-level": 3,
+        "other information": "none"
+      },
+      {
+        "name": "Emily",
+        "addresses": "elm street, 222",
+        "phone numbers": 444555,
+        "website URLs": "https://emilysite.net",
+        "image": "images/Emilly.avif",
+        "membership-level": 1,
+        "other information": "none"
+      },
+      {
+        "name": "David",
+        "addresses": "pine avenue, 333",
+        "phone numbers": 666777,
+        "website URLs": "https://davidsworld.org",
+        "image": "images/david.jpeg",
+        "membership-level": 2,
+        "other information": "none"
+      },
+      {
+        "name": "Michael",
+        "addresses": "oak lane, 444",
+        "phone numbers": 888999,
+        "website URLs": "https://michaelsite.com",
+        "image": "images/michael.jpeg",
+        "membership-level": 1,
+        "other information": "none"
+      },
+      {
+        "name": "Sophia",
+        "addresses": "maple drive, 555",
+        "phone numbers": 111222,
+        "website URLs": "https://sophiadesigns.com",
+        "image": "images/sofia.jpg",
+        "membership-level": 3,
+        "other information": "none"
+      }
+    ]
+}
+  

@@ -30,10 +30,13 @@ Business owners and patrons in the State Of Pernambuco
 - Get inbound links or backlinks from all member business to improve rankings.
 - Embed Google Analytics in all site pages.
 # Design Brief
-- Primary Color #______
-- Secondary Color#______
-- Background Color: #______
-- Text Color #______
+- --blue: #0568A6;
+- --light-blue: #C2E0F2;
+- --yellow:#F2B705;
+- --orange: #BF5B04;
+- --red: #A61A0D;
+- --white: #f4f4f4;
+- --black: #3b3b3b;
 - Font Family <strong> Poppins </strong>
 
 # Site Map
@@ -49,3 +52,7 @@ Chamber Desktop Wireframe
 <img  src="images/mobile.png" >
 
 Chamber Mobile Wireframe
+
+<img  src="images/Captura de tela_27-9-2024_172129_127.0.0.1.jpeg" >
+<img  src="images/Captura de tela_27-9-2024_172154_127.0.0.1.jpeg" >
+<img  src="images/Captura de tela_27-9-2024_172212_127.0.0.1.jpeg" >

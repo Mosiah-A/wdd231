@@ -264,7 +264,7 @@ aside{
     nav {
         display: grid;
         grid-template-rows: 0fr;
-        transition: grid-template-rows 0.5s ease-out; /* Transição para abrir e fechar */
+        transition: grid-template-rows 0.5s ease-out; 
     }
     nav ul  {overflow: hidden;}
     nav.open {
