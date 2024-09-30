@@ -27,9 +27,7 @@ async function fetchMembers() {
     const response = await fetch('scripts/members.json');
     
     // Check if the response is ok
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
+    
     
     // Parse the JSON data
     const data = await response.json();
