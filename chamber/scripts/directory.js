@@ -83,12 +83,19 @@ async function fetchMembers() {
         let img =document.createElement('img');
         img.setAttribute('src', member.image);
         img.setAttribute('width', '200px');
-        const divinfo = document.createElement('div')
+        const divinfo = document.createElement('div');
+        let information = document.createElement('p');
+        information.innerHTML= `<p><strong>Address:</strong> ${member.addresses}</p>
+                    <p><strong>Phone Number:</strong> ${member['phone numbers']}</p>
+                    <p><strong>Website URL:</strong> <a href="${member['website URLs']}" target="_blank">${member['website URLs']}</a></p>
+                    <p><strong>Membership Level:</strong> ${member['membership-level']}</p>`
 
         memberDiv.appendChild(name);
         memberDiv.appendChild(others);
-        memberDiv.appendChild(innerdiv)
-        innerdiv.appendChild(img)
+        memberDiv.appendChild(innerdiv);
+        innerdiv.appendChild(img);
+        innerdiv.appendChild(divinfo);
+        divinfo.appendChild(information);
         cards.appendChild(memberDiv);
     })
 };
