@@ -74,10 +74,21 @@ async function fetchMembers() {
     data.members.forEach(member => {
         const memberDiv = document.createElement('div')
         memberDiv.classList.add('member');
-        let name = document.createElement('h2')
+        let name = document.createElement('h2');
         name.textContent = member.name;
+        let others = document.createElement('p');
+        others.textContent = member['other information'];
+        const innerdiv =  document.createElement('div');
+        innerdiv.classList.add('imageMemberBox');
+        let img =document.createElement('img');
+        img.setAttribute('src', member.image);
+        img.setAttribute('width', '200px');
+        const divinfo = document.createElement('div')
 
-        memberDiv.appendChild(name)
+        memberDiv.appendChild(name);
+        memberDiv.appendChild(others);
+        memberDiv.appendChild(innerdiv)
+        innerdiv.appendChild(img)
         cards.appendChild(memberDiv);
     })
 };
