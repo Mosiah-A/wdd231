@@ -24,7 +24,7 @@ hambutton.addEventListener('click', () => {
 async function fetchMembers() {
 
     // Fetch the JSON data from the file
-    const response = await fetch('/members.json');
+    const response = await fetch('/chamber/scripts/members.json');
     
     // Check if the response is ok
     if (!response.ok) {
@@ -35,7 +35,7 @@ async function fetchMembers() {
     const data = await response.json();
 
     // Get the members list container
-    const membersList = document.getElementById('members-list');
+    const membersList = await document.getElementById('members-list');
 
     // Iterate through the members and display their information
     data.members.forEach(member => {
