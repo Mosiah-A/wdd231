@@ -24,7 +24,7 @@ hambutton.addEventListener('click', () => {
 async function fetchMembers() {
 
     // Fetch the JSON data from the file
-    const response = await fetch('scripts/members.json');
+    const response = await fetch('/chamber/scripts/members.json');
     
     // Parse the JSON data
     const data = await response.json();
