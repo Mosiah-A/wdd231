@@ -35,7 +35,7 @@ async function fetchMembers() {
     const data = await response.json();
 
     // Get the members list container
-    const membersList = await document.getElementById('members-list');
+    const membersList = document.getElementById('members-list');
 
     // Iterate through the members and display their information
     data.members.forEach(member => {
