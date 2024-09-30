@@ -36,15 +36,7 @@
         "membership-level": 1,
         "other information": "none"
       },
-      {
-        "name": "David",
-        "addresses": "pine avenue, 333",
-        "phone numbers": 666777,
-        "website URLs": "https://davidsworld.org",
-        "image": "images/michael.jpeg",
-        "membership-level": 2,
-        "other information": "none"
-      },
+      
       {
         "name": "Michael",
         "addresses": "oak lane, 444",
