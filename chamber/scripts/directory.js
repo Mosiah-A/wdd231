@@ -19,12 +19,12 @@ hambutton.addEventListener('click', () => {
 
 
 // members.json
-
+const url = "https://mosiah-a.github.io/wdd231/chamber/scripts/members.json"
 // Fetch members data and display it on the page
 async function fetchMembers() {
 
     // Fetch the JSON data from the file
-    const response = await fetch('/chamber/scripts/members.json');
+    const response = await fetch(url);
     
     // Parse the JSON data
     const data = await response.json();
