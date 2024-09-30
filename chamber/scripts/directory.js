@@ -17,7 +17,7 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('open');
 });
 
-
+/*
 // members.json
 const url = "https://mosiah-a.github.io/wdd231/chamber/scripts/members.json"
 // Fetch members data and display it on the page
@@ -62,4 +62,24 @@ async function fetchMembers() {
 }
 
 // Call the function to fetch and display the members
+fetchMembers();
+*/
+const url = "https://mosiah-a.github.io/wdd231/chamber/scripts/members.json"
+
+const cards = document.querySelector("#members-list");
+
+async function fetchMembers() {
+    const response = await fetch(url)
+    const data = await response.json()
+    data.members.forEach(member => {
+        const memberDiv = document.createElement('div')
+        memberDiv.classList.add('member');
+        let name = document.createElement('h2')
+        name.textContent = member.name;
+
+        memberDiv.appendChild(name)
+        cards.appendChild(memberDiv);
+    })
+};
+
 fetchMembers();
