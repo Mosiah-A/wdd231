@@ -23,9 +23,20 @@ footer{
     box-sizing: border-box;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-   
+    text-decoration: none;
 }
-
+a{
+    color: #000;
+}
+a:hover{
+    background-color: #174E70;
+    transition: background-color 5s;
+    transition: color 0.4s;
+    padding: 8px;
+    color: antiquewhite;
+    font-size: 20px;
+    border-radius: 5px;
+}
 /*others*/
 
 header{
