@@ -82,6 +82,7 @@ async function fetchMembers() {
         innerdiv.classList.add('imageMemberBox');
         let img =document.createElement('img');
         img.setAttribute('src', member.image);
+        img.setAttribute('alt', 'profile image')
         img.setAttribute('width', '200px');
         const divinfo = document.createElement('div');
         let information = document.createElement('p');
