@@ -4,7 +4,7 @@
         "name": "IBM",
         "addresses": "tv avenue, 123",
         "phone numbers": 234567,
-        "website URLs": "https://test.org",
+        "website URLs": "https://www.ibm.com/",
         "image": "https://th.bing.com/th/id/OIP.f-ZI-7EwW1hZOAu5KPU3FgHaE-?rs=1&pid=ImgDetMain",
         "membership-level": 1,
         "other information": "TECNOLOGY COMPANY"
@@ -13,7 +13,7 @@
         "name": "Coca-cola",
         "addresses": "main street, 456",
         "phone numbers": 123456,
-        "website URLs": "https://johnwebsite.com",
+        "website URLs": "https://www.coca-cola.com.br/",
         "image": "https://static.vecteezy.com/system/resources/previews/020/190/670/large_2x/cocacola-logo-cocacola-icon-free-free-vector.jpg",
         "membership-level": 2,
         "other information": "none"
@@ -22,16 +22,16 @@
         "name": "X",
         "addresses": "baker street, 789",
         "phone numbers": 987654,
-        "website URLs": "https://sarahportfolio.com",
+        "website URLs": "https://www.twitter.com/",
         "image": "https://img.gamebrott.com/wp-content/uploads/2023/07/Meme-Twitter-Ganti-Nama-Jadi-X-Mulai-Bertebaran-di-Internet-1.webp ",
         "membership-level": 3,
         "other information": "none"
       },
       {
-        "name": "Space-x",
+        "name": "SpaceX",
         "addresses": "elm street, 222",
         "phone numbers": 444555,
-        "website URLs": "https://emilysite.net",
+        "website URLs": "https://www.spacex.com/",
         "image": "https://logosmarcas.net/wp-content/uploads/2020/09/SpaceX-Emblema.png",
         "membership-level": 1,
         "other information": "none"
@@ -40,16 +40,16 @@
         "name": " Michelin ",
         "addresses": "oak lane, 444",
         "phone numbers": 888999,
-        "website URLs": "https://michaelsite.com",
+        "website URLs": "https://www.michelin.com.br/",
         "image": "https://michelinmedia.com/site/user/images/Michelin_Corporate_Logo___on_blue.jpg",
         "membership-level": 1,
         "other information": "none"
       },
       {
-        "name": "NeuraLink",
+        "name": "Neuralink",
         "addresses": "maple drive, 555",
         "phone numbers": 111222,
-        "website URLs": "https://sophiadesigns.com",
+        "website URLs": "https://neuralink.com/",
         "image": "https://i1.wp.com/iatranshumanisme.com/wp-content/uploads/2019/10/Neuralink_Logo.png?fit=700%2C227&ssl=1",
         "membership-level": 3,
         "other information": "none"
