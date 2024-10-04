@@ -1,12 +1,12 @@
 
 // footer secting
-document.addEventListener('DOMContentLoaded', () => {
-    const currentYear = new Date().getFullYear();
-    const lastModified = document.lastModified;
+import getData from "./footer";
 
-    document.getElementById('currentYear').textContent = `© ${currentYear}`;
-    document.getElementById('last-modified').textContent = `Last modified: ${lastModified}`;
-});
+document.addEventListener('DOMContentLoaded', () => {
+    getData()
+
+})
+
 
 // menu settings
 const hambutton = document.querySelector('#menu');
