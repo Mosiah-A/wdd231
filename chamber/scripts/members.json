@@ -1,16 +1,16 @@
 {
     "members": [
       {
-        "name": "Mosiah",
+        "name": "IBM",
         "addresses": "tv avenue, 123",
         "phone numbers": 234567,
         "website URLs": "https://test.org",
-        "image": "images/mosiah.avif",
+        "image": "https://th.bing.com/th/id/OIP.f-ZI-7EwW1hZOAu5KPU3FgHaE-?rs=1&pid=ImgDetMain",
         "membership-level": 1,
-        "other information": "CTO"
+        "other information": "TECNOLOGY COMPANY"
       },
       {
-        "name": "John",
+        "name": "Coca-cola",
         "addresses": "main street, 456",
         "phone numbers": 123456,
         "website URLs": "https://johnwebsite.com",
@@ -19,7 +19,7 @@
         "other information": "none"
       },
       {
-        "name": "Sarah",
+        "name": "X",
         "addresses": "baker street, 789",
         "phone numbers": 987654,
         "website URLs": "https://sarahportfolio.com",
@@ -28,7 +28,7 @@
         "other information": "none"
       },
       {
-        "name": "Emily",
+        "name": "Space-x",
         "addresses": "elm street, 222",
         "phone numbers": 444555,
         "website URLs": "https://emilysite.net",
@@ -37,7 +37,7 @@
         "other information": "none"
       },
       {
-        "name": "Michael",
+        "name": "Michelin",
         "addresses": "oak lane, 444",
         "phone numbers": 888999,
         "website URLs": "https://michaelsite.com",
@@ -46,7 +46,7 @@
         "other information": "none"
       },
       {
-        "name": "Sophia",
+        "name": "NeuraLink",
         "addresses": "maple drive, 555",
         "phone numbers": 111222,
         "website URLs": "https://sophiadesigns.com",
