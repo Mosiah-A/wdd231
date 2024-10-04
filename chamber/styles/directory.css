@@ -39,6 +39,8 @@ footer{
 /*menu and navigation*/
 nav img{
     width: 44px;
+    height: auto;
+    margin-left: 80px;
 }
 header{
     display:block;
@@ -101,7 +103,7 @@ header nav a{
     margin: 20px;
 }
 .member img{
-    width: 10vw;
+    width: 200px;
     border-radius: 15%;
     box-shadow: 2px 2px 2px 2px var(--yellow);
     margin-right: 20px;
