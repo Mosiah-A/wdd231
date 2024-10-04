@@ -103,17 +103,17 @@ header nav a{
     margin: 20px;
 }
 .member img{
-    width: 200px;
     border-radius: 15%;
     box-shadow: 2px 2px 2px 2px var(--yellow);
     margin-right: 20px;
+    background-color: white;
 }
 .member {
     padding-top: 10px;    
     border: 1px solid #ccc;
     margin-bottom: 10px;
     border-radius: 5px;
-    width: 25vw;
+    width: 26vw;
     justify-content: center ;
     display: flex;
     flex-direction: column;
@@ -121,6 +121,8 @@ header nav a{
     font-size: 0.8rem;
 }
 .imageMemberBox{
+    width: 24vw;
+    height: 30vh;
     display: flex;  
     margin: 5px;
     border-top: solid 1px var(--black);
