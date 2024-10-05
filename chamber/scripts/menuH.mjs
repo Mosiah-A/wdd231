@@ -6,6 +6,8 @@ export function menusettings()  {
     hambutton.addEventListener('click', () => {
         mainnav.classList.toggle('open');
         hambutton.classList.toggle('open');
+
+        
     });
     setNavStyle()
 }
@@ -85,16 +87,86 @@ function setNavStyle() {
         joinbtn.style.backgroundColor = 'var(--blue)'; // Restaura a cor original
         joinbtn.style.fontSize = '18px'; // Restaura o tamanho da fonte original
     })
+
+
+
+
+     // CSS Styling using JavaScript
+     const style = document.createElement('style');
+     style.innerHTML = `
+         #navDiv {
+             display: flex;
+             flex-direction: column;
+             height: 20vh;
+         }
+         h1 {
+             font-size: 1rem;
+             width: 100%;
+         }
+         button {
+             display: block;
+             margin: 0 auto;
+             width: auto;
+             padding: 10px 20px;
+             font-size: 1rem;
+             border-radius: 8px;
+         }
+         #menulist {
+             display: flex;
+             flex-direction: column;
+             justify-content: space-around;
+             align-items: center;
+             width: 100%;
+             background-color: var(--dblue);
+             padding: 0;
+             margin: 0;
+         }
+         #navegation li {
+             width: 99vw;
+         }
+         #navegation li a {
+             width: 100%;
+             text-align: center;
+             padding: 15px 0;
+             border-bottom: 1px solid var(--dblue);
+         }
+         #menu {
+             display: block;
+             font-size: 1.5rem;
+             border: 0;
+             background: none;
+             color: var(--black);
+             width: 100vw;
+             cursor: pointer;
+             padding: 20px;
+         }
+         #menu::before {
+             content: "☰";
+             font-size: 40px;
+             color: var(--black);
+         }
+         #menu.open::before {
+             content: "❎";
+         }
+         header {
+             background-color: var(--dblue);
+         }
+         #navegation {
+             display: grid;
+             grid-template-rows: 0fr;
+             transition: grid-template-rows 0.5s ease-out;
+         }
+         #navegation.open {
+             grid-template-rows: 1fr;
+         }
+         #navegation a:hover {
+             background-color: #bbb;
+             color: #333;
+             font-weight: 700;
+             width: 100%;
+         }
+     `;
+     document.head.appendChild(style);
 }
 
-/*
 
-
-header nav a{
-    color: var(--white);
-    text-decoration: none;
-    padding: 1rem;
-    
-
-}
-*/
