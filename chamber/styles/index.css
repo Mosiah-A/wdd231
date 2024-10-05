@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
+
+}
+
+body{
+    background-color: var(--white);
+}
+#correntPage{
+    background-color: var(--blue);  
+    border-radius: 20px;
+}
+:root{
+    --blue: #0568A6;
+    --dblue: #023757;
+    --light-blue: #C2E0F2;
+    --yellow:#F2B705;
+    --orange: #BF5B04;
+    --red: #A61A0D;
+    --white: #f4f4f4;
+    --black: #3b3b3b;
+}
+
+header nav a:hover{
+    background-color: var(--blue) ;
+    border-radius: 15%;
+    
+}
+button:hover {
+    background-color: #023757; 
+    cursor: pointer;
+}
+
+#heroimage{
+    width: 100vw;
+}
+h1{
+    margin: 20px 80px;
+}
+h2{
+    color: var(--white);
+}
+#section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95vw;
+    margin: auto;
+}
+#currentEvent{
+    width: 50vw;
+    background-color: var(--blue);
+    color: var(--white);
+}
+#currentEvent h2, #currentWetherTitle, #forecastTitle {
+    background-color: var(--dblue);
+    padding: 10px;
+    color: var(--white);
+}
+#currentEvent p {
+    padding: 10px;
+}
+#weather{
+    background-color: var(--light-blue);
+    width: 400px;
+}
+#forecast{
+    width: 200px;
+    background-color: var(--light-blue);
+
+}
+#forecast div{
+    margin: 20px;
+    
+}
+#weatherBox {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+#current-temp{
+    font-weight: bold;
+}
+#membergrid{
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 55px;
+    background-color: var(--blue);
+    margin-bottom: 20px;
+}
+#members-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.member{
+    background-color: var(--light-blue);
+    margin: 55px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+}
+.member h2{
+    color: var(--black);
+    
+}
+.imageMemberBox{
+    margin: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.imageMemberBox img{
+    margin-bottom: 20px;
+}
+
+.number{
+    margin-bottom: 20px;
+}
+.website{
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.website:hover{
+    background-color: var(--dblue);
+}
+#member{
+    padding-top: 30px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+    color: var(--white);
+}

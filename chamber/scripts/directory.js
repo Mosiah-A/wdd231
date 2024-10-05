@@ -1,21 +1,10 @@
 
-// footer secting
+import { getdate } from "./getdate.mjs";
+import { menusettings } from "./menuH.mjs";
 document.addEventListener('DOMContentLoaded', () => {
-    const currentYear = new Date().getFullYear();
-    const lastModified = document.lastModified;
-
-    document.getElementById('currentYear').textContent = `© ${currentYear}`;
-    document.getElementById('last-modified').textContent = `Last modified: ${lastModified}`;
-});
-
-// menu settings
-const hambutton = document.querySelector('#menu');
-const mainnav = document.querySelector('#navegation');
-
-hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('open');
-    hambutton.classList.toggle('open');
-});
+    getdate()
+    menusettings()
+})
 
 /*
 // members.json
