@@ -7,13 +7,15 @@ export function getdate(){
     text-align: left;
     background-color: var(--blue    );
     color: var(--white);
-    height: 10rem;
+    height: 9rem;
     padding: 20px;
     padding-bottom: 70px;
     `
 
+
     document.getElementById('currentYear').textContent = `© ${currentYear}`;
     document.getElementById('last-modified').textContent = `Last modified: ${lastModified}`;
+
 
 
 };
