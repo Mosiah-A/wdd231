@@ -161,6 +161,8 @@ aside{
     text-align: center;
     align-content: center;
     border-radius: 5%;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
    
 }
 .gridCourse{
@@ -173,7 +175,7 @@ aside{
     padding-top: 50px;
     border-top: solid 1px #0000005a;
 }
-.gridCourse p{
+.gridCourse button{
     background-color: #333333;
     width: 30vw;
     height: 50px;
@@ -182,6 +184,13 @@ aside{
     color: aliceblue;
     align-content: center;
     border-radius: 0%;
+    transition: transform 0.5s ease-in-out;
+   }
+.gridCourse button:hover, #courseNav button:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #222222; 
 }
 .blocked{
     background-color: #333333;
@@ -191,6 +200,28 @@ aside{
     background-color: #174E70;
 }
 
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+  
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+  
 
 @media (max-width: 70rem) {
    

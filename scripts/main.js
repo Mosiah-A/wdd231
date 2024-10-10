@@ -105,26 +105,34 @@ createCourseElement(courses);
 function createCourseElement(filter) {
     gridCourse.innerHTML = ""; // Clear previous content
     filter.forEach(element => {
-        const course = document.createElement("p");
+        const course = document.createElement("button");
         course.innerText = `${element.subject}  ${element.number} (${element.credits})`;
         if (element.completed) {
             course.style.backgroundColor = '#174E70'; // Set background color for completed courses
             course.style.color = 'white'; // You might want to set text color for readability
         } 
-
+        course.addEventListener("click", () => {
+            displayCourseDetails(element);
+        })
         gridCourse.appendChild(course); // Appending to the grid
     });
 }
 
 
 let totalOfCredt = 0
+let totalCredit = document.getElementById("totalcredit")
+
 function reduce(i) {
     i.forEach(element => {
         if (element.completed) {
             totalOfCredt +=  element.credits //sum the total of credit
         }
     })
+    totalCredit.innerText = `${totalOfCredt}`
+    
+
 }
+
 reduce(courses)
 const all = document.getElementById("all");
 const cse= document.getElementById("cse");
@@ -144,5 +152,31 @@ wdd.addEventListener('click', () => {
     createCourseElement(filter);
 });
 
+
+
+
+const courseDetails = document.getElementById("course-details")
+const closeModal = document.getElementById("closeModal")
+
+const modal = document.getElementById("course-details");
+
+const displayCourseDetails = (course) => {
+    modal.innerHTML = "";
+    modal.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+    `;
+
+    modal.showModal();
+
+    modal.addEventListener("click", () => {
+        modal.close();
+    })
+}
 
 
