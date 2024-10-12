@@ -23,8 +23,16 @@ body{
 
 
 
-#correntPage{
-    background-color: var(--blue);  
+footer{
+    margin: auto;
+    text-align: left;
+    background-color: var(--blue    );
+    color: var(--white);
+    height: 9rem;
+    padding: 20px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* main */
@@ -35,7 +43,7 @@ body{
 .member img{
     border-radius: 15%;
     box-shadow: 2px 2px 2px 2px var(--yellow);
-    margin-right: 20px;
+    margin: 20px 0;
     background-color: white;
 }
 .member {
@@ -43,8 +51,7 @@ body{
     border: 1px solid #ccc;
     margin-bottom: 10px;
     border-radius: 5px;
-    width: 26vw;
-    
+    width: 26vw;   
     justify-content: center ;
     display: flex;
     flex-direction: column;
@@ -52,8 +59,11 @@ body{
     font-size: 0.8rem;
 }
 .imageMemberBox{
-    width: 24vw;
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 40vh;
     display: flex;  
     margin: 5px;
     border-top: solid 1px var(--black);
@@ -63,13 +73,63 @@ body{
 
 #members-list{
     width: 80vw;
-    display: flex;
-    flex-direction: row;
+    
     flex-wrap: wrap;
     justify-items: center ;
 }
+.grid{
+    display: flex;
+    flex-direction: row;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    
+}
+.list .member{
+    width: 60vw;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.list .imageMemberBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.list img{
+    width: 400px;
+    margin-left: 40px;
+}
+#listgrid {
+    margin: auto;
+    display: flex;
+    width: 400px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+#listgrid button{
+    border: none;
+    height: 55px;
+    width: 100px;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 20px;
+    transition: font-size .2s ease-in;
+    transition: box-shadow .3s ease-in;
+}
+.active{
+    opacity: 50%;
+    color: #3b3b3b;
 
-
+}
+button:hover{
+    opacity: 90%;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: inset 4px 4px 4px var(--black);
+}
 .information h2{
     font-size: large;
 }
@@ -77,6 +137,9 @@ body{
 
 @media (max-width: 70rem) {
     /* main */
+    #listgrid{
+        display: none;
+    }
     #members-list{
         flex-direction: column;
     }
@@ -85,85 +148,17 @@ body{
         margin-top: 20px;
         font-size: 1rem;
     }
-    /*menu and navigation*/
-    #menulist{
-        display: flex;
+    .imageMemberBox{
         flex-direction: column;
-        height: auto;
-        background-color: #174E70;
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-    }       
-       
-    #navegation li{
-        width: 99vw;
-       
-
-    }
-    
-    #navegation li a{
-        display: block;
-        height: 70px;
         align-items: center;
-        justify-content: center;
-        text-align: center;
-        
+        width: 90%;
+        margin: auto;
+        height: auto;
     }
-
-    
-    nav{
-        width: 100%;
+    .imageMemberBox img{
+        margin: 20px 0;
     }
-    nav a{
-        width: 100%;
-
-    }
-     
-    #menu {
-        display: flex;  
-        font-size: 1.5rem;
-        border: 0;
-        background: none;
-        color: #000;
-        width: 100vw;
-        cursor: pointer;
-        padding: 20px;
-        }
-        
-    .correntPage{
-        background-color: #333333;
-    }
-       
-    #menu::before {
-        content: "☰";
-        color: #bbb;
-        font-size: 40px;
-        justify-items: left;
-    }
-       
-    #menu.open::before {
-        content: "❎";
-    }
-    header{
-        background-color: #174E70;
-    }
-    
-
-    #navegation a:hover {
-        background-color: #bbb;
-        color: #333;
-        font-weight: 700;
-        width: 100%;
-    }
-    
-    nav {
-        display: grid;
-        grid-template-rows: 0fr;
-        transition: grid-template-rows 0.5s ease-out; 
-    }
-    nav ul  {overflow: hidden;}
-    nav.open {
-        grid-template-rows: 1fr;
-    }
+   footer{
+    height: auto;
+   }
 }   

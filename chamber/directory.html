@@ -7,6 +7,7 @@
     <meta name="description" content="A chamber of commerce to demonstrate abilities achieved in WDD231 in BYU-I">
     <meta name="author" content="Mosiah Assuncao andrade">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/menu.css">
     <script type="module" src="scripts/directory.js"></script>
     <link rel="icon" href="images/frevo-umbrela.ico" type="image/x-icon">
     <meta property="og:URL" content='https://mosiah-a.github.io/wdd231/chamber/directory.html'>
@@ -21,7 +22,7 @@
             <div id="navDiv">
                 <img src="images/frevo-umbrela.ico" alt="frevo umpbrela logo" id="logo-nav">
                 <h1>Pernambuco Chamber of commerce </h1>
-                <button id="joinbtn">Join</button>
+                <a id="joinbtn" href="join.html">Join</a>
                 <button id="menu"></button>
             </div>
             <ul id="menulist">
@@ -34,7 +35,11 @@
     </header>
     <main>
         <h2 class="subtitle">Members Information</h2>
-        <div id="members-list"></div>
+        <div id="listgrid">
+            <button id="list"> List mode</button>
+            <button id="grid" class="active"> Grid mode</button>
+        </div>
+        <div id="members-list" class="grid"></div>
     </main>
 
         

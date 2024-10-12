@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="scripts/join.js"></script>
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+    <header>
+        <nav id="navegation">
+            <div id="navDiv">
+                <img src="images/frevo-umbrela.ico" alt="frevo umpbrela logo" id="logo-nav">
+                <h1>Pernambuco Chamber of commerce </h1>
+                <a id="joinbtn"  href="join.html">Join</a>
+                <button id="menu"></button>
+            </div>
+            <ul id="menulist">
+                <li class="nav-item"><a href="index.html"   class="link"> Home </a></li>
+                <li class="nav-item"><a href="#"   class="link"> Discovery </a> </li>
+                <li class="nav-item"><a href="directory.html" class="link"> Directory </a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="thankyou.html" method="get">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" autocomplete="given-name">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" autocomplete="family-name">
+        <label for="organizationTitle">Organization Title</label>
+        <input type="text" name="organizationTitle" id="organizationTitle" autocomplete="organization-title">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" autocomplete="email">
+        <label for="tNumber">Phone Number</label>
+        <input type="tel" name="tNumber" id="tNumber" autocomplete="tel">
+        <label for="organizationName">Business / Organization's Name</label>
+        <input type="tel" name="organizationName" id="organizationName" autocomplete="organization">
+        <label for="memberLevel">membership level</label>
+        <select name="memberLevel" id="memberLevel">
+            <option selected disabled>Your choosing</option>
+            <option value="NP">NP Membership (is for non profit organizations and there is no fee.)</option>
+            <option value="level3">Bronze Membership</option>
+            <option value="level2">Silver Membership</option>
+            <option value="level1">Gold Membership</option>
+        </select>
+        <label for="description">Description</label>
+        <textarea name="description" id="description"></textarea>
+        <input type="datetime" name="datetime" id="datetime" hidden>
+        <button type="submit">Join to Our Chamber</button>
+    </form>
+    <footer id="footer">
+        <div>
+            <p>Pernambuco Chamber Commerce</p>
+            <p>Main avenue</p>
+            <p>Recife, Pernambuco - Brazil</p>
+            <p>mosiah@email.com</p>
+            <p>(22) 222-2222</p>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/" target="_blank" >Intagram</a>
+            <a href="https://www.github.com/" target="_blank" >Git Hub</a>
+            <a href="https://www.LinkedIn.com/" target="_blank" >LinkedIn</a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Mosiah Andrade</p>
+            <p><span id="currentYear"></span>  Pernambuco Chamber Commerce</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>
