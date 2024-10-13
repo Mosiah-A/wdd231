@@ -20,17 +20,119 @@ body{
 }
 
 form{
-    width: 400px;
+    width: 500px;
+    max-width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
+    border: solid var(--black) 2px;
+    padding: 30px;
 }
 label{
     margin-top: 20px;
+    
 }
-button {
+input, select, textarea{
+    background-color: var(--light-blue);
+    height: 44px;
+    border: none;
+    font-size: 18px;
+}
+textarea{
+    height: 80px;
+}
+form button, input[type="submit"] {
     margin: 20px;
+    height: 50px;
+    background-color: var(--blue);
+    color: var(--white);
+    transition: box-shadow .5s ease-out;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: solid var(--black) 2px;
+
+}
+aside{
+    margin: auto;
+    padding: 100px;
+}
+
+aside div{
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 20px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    
+      
+}
+@keyframes slidein {
+    50% {
+        background-color: #A61A0D;
+        
+      translate: 150vw 0;
+      scale: 200%  2;
+    }
+    80%{
+        background-color: #F2B705;
+
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.432);
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+aside button{
+    height: 44px;
+    padding: 0 50px; 
+    margin: auto;
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    border-radius: 10px;
+    transition: box-shadow .5s ease-out;
+}
+button:hover, input[type="submit"]:hover {
+    opacity: 70%;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px black;
+    color: black;
+    font-weight: bolder;
+}
+:modal{
+    background-color: var(--light-blue);
+    margin: auto;
+    height: 400px;
+    padding: 80px;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px;
+}
+:modal button{
     height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #023757;
+    cursor: pointer;
+}
+::backdrop{
+    background: rgba(0, 83, 88, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
 }
 footer{
     margin: auto;
@@ -46,7 +148,20 @@ footer{
 
 
 @media (max-width: 70rem) {
-    
+    main{
+        flex-direction: column;
+    }
+    footer{
+
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 40px;
+    }
+    aside{
+        margin: 0;
+        padding: 0;
+    }
 }
     
     

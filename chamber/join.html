@@ -7,6 +7,14 @@
     <script type="module" src="scripts/join.js"></script>
     <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <meta name="description" content="A chamber of commerce to demonstrate abilities achieved in WDD231 in BYU-I">
+    <meta name="author" content="Mosiah Assuncao andrade">
+    <link rel="icon" href="images/frevo-umbrela.ico" type="image/x-icon">
+    <meta property="og:url" content='https://mosiah-a.github.io/wdd231/chamber.join.html'>
+    <meta property="og:title" content="join form to pernambuco chamber">
+    <meta property="og:description" content="A chamber of commerce to demonstrate abilities achieved in WDD231 in BYU-I">
+    <meta property="og:type" content='website'>
+    <meta property="og:image" content='https://th.bing.com/th/id/OIP.yF9Pas0-5NMeI8Ga6fwUfQHaEK?w=305&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7'>
 </head>
 <body>
     <header>
@@ -24,32 +32,52 @@
             </ul>
         </nav>
     </header>
-    <form action="thankyou.html" method="get">
-        <label for="fname">First Name</label>
-        <input type="text" name="fname" id="fname" autocomplete="given-name">
-        <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname" autocomplete="family-name">
-        <label for="organizationTitle">Organization Title</label>
-        <input type="text" name="organizationTitle" id="organizationTitle" autocomplete="organization-title">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" autocomplete="email">
-        <label for="tNumber">Phone Number</label>
-        <input type="tel" name="tNumber" id="tNumber" autocomplete="tel">
-        <label for="organizationName">Business / Organization's Name</label>
-        <input type="tel" name="organizationName" id="organizationName" autocomplete="organization">
-        <label for="memberLevel">membership level</label>
-        <select name="memberLevel" id="memberLevel">
-            <option selected disabled>Your choosing</option>
-            <option value="NP">NP Membership (is for non profit organizations and there is no fee.)</option>
-            <option value="level3">Bronze Membership</option>
-            <option value="level2">Silver Membership</option>
-            <option value="level1">Gold Membership</option>
-        </select>
-        <label for="description">Description</label>
-        <textarea name="description" id="description"></textarea>
-        <input type="datetime" name="datetime" id="datetime" hidden>
-        <button type="submit">Join to Our Chamber</button>
-    </form>
+    <main>
+        <form action="thankyou.html" method="get">
+            <h1>Join To Our Chamber</h1>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" autocomplete="given-name" required>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" autocomplete="family-name" required>
+            <label for="organizationTitle">Organization Title</label>
+            <input type="text" name="organizationTitle" id="organizationTitle" autocomplete="organization-title" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" autocomplete="email" required>
+            <label for="tNumber">Phone Number</label>
+            <input type="tel" name="tNumber" id="tNumber" autocomplete="tel" required>
+            <label for="organizationName">Business / Organization's Name</label>
+            <input type="tel" name="organizationName" id="organizationName" autocomplete="organization" required>
+            <label for="memberLevel">Membership level</label>
+            <select name="memberLevel" id="memberLevel" required>
+                <option selected disabled>Your choosing</option>
+                <option value="NP">NP Membership (is for non profit organizations and there is no fee.)</option>
+                <option value="level3">Bronze Membership</option>
+                <option value="level2">Silver Membership</option>
+                <option value="level1">Gold Membership</option>
+            </select>
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea required>
+            <input type="datetime" name="datetime" id="datetime" hidden>
+            <input type="submit" value="Join to Our Chamber">
+        </form>
+        <aside>
+            <div>
+                <h2>Bronze Membership</h2>
+                <button id="bronzeModal"> Learn more about</button>
+            </div>
+            <div>
+                <h2>Silver Membership</h2>
+                <button id="silverModal"> Learn more about</button>
+            </div>
+            <div>
+                <h2>Gold Membership</h2>
+                <button id="goldModal"> Learn more about</button>
+            </div>
+        </aside>
+    </main>
+    <dialog>
+        <button id="close">X</button>
+    </dialog>
     <footer id="footer">
         <div>
             <p>Pernambuco Chamber Commerce</p>
