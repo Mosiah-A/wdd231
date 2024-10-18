@@ -1,0 +1,56 @@
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bolder;
+  color: #0B0E13;
+}
+p{font-family: "Ubuntu", sans-serif;}
+.color{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px 2px #ffffff3e inset;
+    transition: transform .5s ease-in-out;
+}
+.color:hover{
+    transform: scale(1.3);  
+}
+#b1{
+    background-color: #0B0E13;
+}
+
+#b2{
+    background-color: #5690A5;
+}
+
+#b3{
+    background-color: #3A4957;
+}
+
+#b4{
+    background-color: #98BEC9;
+}
+
+#b5{
+    background-color: #1B1316;
+}
+div{
+    display: flex;
+    gap: 20px;
+}
+div section{
+    margin: 0 30px;
+}
+img{
+    width: 400px;
+    height: auto;
+    border: #3A4957 10px solid;
+    box-shadow: #3A4957 20px 20px 20px;
+    margin-bottom: 200px;
+}
