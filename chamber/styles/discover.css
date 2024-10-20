@@ -187,6 +187,9 @@ footer a{
     section{
         align-items: center;
     }
+    section img{
+        width: 60vw;
+    }
     #ilustration{
         display: none;
     }
