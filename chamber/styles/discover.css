@@ -43,7 +43,7 @@ figure{
 @keyframes appear {
     0%{
         opacity: 0%;
-        scale: .5;
+        transform: scale(0.5);
     }
     100% {
         opacity: 100%;
