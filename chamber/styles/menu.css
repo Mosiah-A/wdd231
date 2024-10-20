@@ -98,7 +98,7 @@ header{
 }
     
 #joinbtn:hover{
-        background-color: 'var(--dblue)'; 
+        background-color: var(--dblue); 
         font-size: 20px;
 }
 
