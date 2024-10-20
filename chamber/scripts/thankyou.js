@@ -3,6 +3,7 @@ import { menusettings } from "./menuH.mjs";
 
 document.addEventListener('DOMContentLoaded', () => {
     getdate();
+    menusettings();
 });
 
 const fname = document.getElementById('fname')

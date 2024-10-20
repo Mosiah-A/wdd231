@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;  
+}
+
+
+:root{
+    --blue: #0568A6;
+    --dblue: #023757;
+    --light-blue: #C2E0F2;
+    --yellow:#F2B705;
+    --orange: #BF5B04;
+    --red: #A61A0D;
+    --white: #f4f4f4;
+    --black: #3b3b3b;
+}
+
+body{
+    background-color: var(--white);
+}
+#message{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    margin: auto;
+    width: 80%;
+
+}
+aside img{
+    margin-left: 80px;
+    grid-column: 2;
+    width: 40vw;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+    
+}
+
+aside figcaption{
+    text-align: center;
+    margin-bottom: 20px;
+}
+section{
+    border: solid 2px black;
+    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+section img{
+    border-radius: 20px;
+    margin-bottom:20px
+}
+section h2{
+    margin-bottom: 10px;
+}
+section span{   
+    font-size: 35px;
+}
+.statistc{
+    display: flex;
+    gap: 20px;
+}
+.statistc section{
+    width: 50%;;
+}
+main div{
+    margin: 20px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#calendar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    color: var(--white);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--red);
+    
+}
+Button{
+    background-color: var(--yellow);
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+button:hover{
+    opacity: 90%;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #c2c2d6;
+}
+
+
+footer{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--blue);
+    color: var(--white);
+    
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+    color: var(--white);
+}

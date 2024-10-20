@@ -6,6 +6,7 @@
     <title>Thank You</title>
     <script type="module" src="scripts/thankyou.js" ></script>
     <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/menu.css">
     <meta name="description" content="A chamber of commerce to demonstrate abilities achieved in WDD231 in BYU-I">
     <meta name="author" content="Mosiah Assuncao andrade">
     <link rel="icon" href="images/frevo-umbrela.ico" type="image/x-icon">
@@ -16,6 +17,21 @@
     <meta property="og:image" content='https://th.bing.com/th/id/OIP.yF9Pas0-5NMeI8Ga6fwUfQHaEK?w=305&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7'>
 </head>
 <body>
+    <header>
+        <nav id="navegation">
+            <div id="navDiv">
+                <img src="images/frevo-umbrela.ico" alt="frevo umpbrela logo" id="logo-nav">
+                <h1>Pernambuco Chamber of commerce </h1>
+                <a id="joinbtn"  href="join.html">Join</a>
+                <button id="menu"></button>
+            </div>
+            <ul id="menulist">
+                <li class="nav-item"><a href="index.html"   class="link"> Home </a></li>
+                <li class="nav-item"><a href="discover.html"   class="link"> Discovery </a> </li>
+                <li class="nav-item"><a href="directory.html" class="link"> Directory </a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h1>Thank You, <span id="fname"></span> <span id="lname"></span> !</h1>
         <div id="formInfo">
