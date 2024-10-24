@@ -1,0 +1,94 @@
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --dark: #0B0E13;
+    --blue: #5690A5;
+    --mid-blue: #3A4957;
+    --ligt-blue: #98BEC9;
+    --black: #1B1316;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+h1,h2,h3,h4,h5, a{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bolder;
+    color: #0B0E13;
+  }
+p, li{
+    font-family: "Ubuntu", sans-serif;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    & #imageCont{
+        grid-column: 1;
+        grid-row: 1/3;
+        margin: auto;
+        margin-top: 40px;
+        & img{
+            border-radius: 20px;
+            width: 420px;
+            height: 600px;
+        }
+    }
+    & #maincontent {
+        grid-row: 1;
+        margin: auto;
+        text-align: center;
+        & h2{
+            font-size: 2.5rem;
+            align-items: start;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+    }
+    & #grid{
+        display: flex;
+        flex-direction: row;
+        grid-row: 3;
+        grid-column: 1/4;
+        margin: 20px;
+        gap: 20px;
+        overflow: hidden;
+        & img{
+            width: 400px;
+            height: 220px;
+            background-color: #5690a54f;
+            box-shadow: 2px 2px 4px ;
+            border-radius: 20px;
+
+            
+        }
+
+    }
+}
+
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: var(--blue);
+}
+@media (max-width: 70rem) {
+    main{
+        display: flex;
+        flex-direction: column;
+        & #imageCont{
+            width: 100%; /* Largura desejada */
+            height: 200px; /* Altura desejada */
+            overflow: hidden; /* Oculta a parte que não cabe no container */
+            position: relative;
+        }
+        & #imageCont img{
+            width: 100%; /* Largura original da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            position: absolute;
+            top: -50px; 
+        }
+    }
+}

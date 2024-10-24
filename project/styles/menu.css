@@ -1,0 +1,155 @@
+:root {
+    --dark: #0B0E13;
+    --blue: #5690A5;
+    --mid-blue: #3A4957;
+    --ligt-blue: #98BEC9;
+    --black: #1B1316;
+}
+
+header {
+    background-color: var(--blue);
+    color: var(--black);
+    height: 70px;
+}
+
+#navigation {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#navDiv {
+    width: 400px;
+    padding-left: 100px;
+}
+
+#menulist {
+    height: 70px;
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+    list-style: none;
+}
+
+#menulist a {
+    color: var(--dark);
+    padding: 8px 20px;
+    margin: 6px 0;
+    padding-bottom: 30%;
+    text-decoration: none;
+}
+
+#menulist a:hover, .marked {
+    color: var(--mid-blue);
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#menulist a:hover {
+    transition: background-color .5s ease-in-out;
+}
+
+#menu {
+    display: none;
+}
+
+@media (max-width: 70rem) {
+    h1 {
+        font-size: 2rem;
+        height: 70px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    #menulist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 0;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        overflow: hidden; /* Hide overflow to ensure smooth transition */
+    }
+    
+    #menulist.open {
+        transition: height .5s ease-out;
+        height: auto;
+        width: 100%;
+    }
+
+    #menulist li {
+        width: 99vw;
+        margin-bottom: 20px;
+    }
+
+    #menulist li a {
+        margin: auto;
+        width: 70%;
+        height: 55px;
+        border-radius: 0;
+        text-align: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+        
+    #menulist a {
+        padding-bottom: 1%;
+        align-items: center;
+    }
+    #menulist a:hover{
+        border-radius: 0;
+    }
+    #menu {
+        display: block;
+        font-size: 1rem;
+        border: 0;
+        background: none;
+        color: #000;
+        cursor: pointer;
+        padding: 20px;
+        position: absolute;
+        top: 2vh;
+        right: 0px;
+    }
+
+    #menu::before {
+        content: "☰";
+        color: var(--black);
+        font-size: 40px;
+    }
+
+    #menu.open::before {
+        content: "❎";
+    }
+}
