@@ -1,0 +1,121 @@
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --dark: #0B0E13;
+    --blue: #5690A5;
+    --mid-blue: #3A4957;
+    --ligt-blue: #98BEC9;
+    --black: #1B1316;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+h1,h2,h3,h4,h5, a{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bolder;
+    color: #0B0E13;
+  }
+p, li{
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ligt-blue);
+    width: 25%;
+    height: 50vh;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.907);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #07143f7d;
+    color: aliceblue;
+    border: 1px solid var(--mid-blue);
+    
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0c5068;
+    scale: 1.03;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--blue);
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 70rem) {
+    h2{
+        font-size: 1rem;
+    }
+    
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ligt-blue);
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.907);
+}
+
+}

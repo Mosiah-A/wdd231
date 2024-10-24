@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currence</title>
+    <script type="module" src="scripts/currence.js"></script>
+    <link rel="stylesheet" href="styles/currence.css">
+    <link rel="stylesheet" href="styles/menu.css"> 
+    <meta name="description" content="Page to calculate and convert D&D currence">
+    <meta name="author" content="Mosiah Assunção Andrade">
+    <link rel="icon" href="images/" type="image/x-icon">
+    <meta property="og:url" content="https://mosiah-a.github.io/wdd231/project/index.html">
+    <meta property="og:title" content="Warlock's Command">
+    <meta property="og:description" content="Page to calculate and convert D&D currence">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+</head>
+<body>
+    <header>
+        <nav id="navigation">
+            <div id="navDiv">
+                <h1>Warlock's Command</h1>
+                <div class="menu-icon">
+                    <button id="menu"></button>
+                </div>
+            </div>
+            <ul id="menulist">
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="#" target="_self" class="marked">Currence</a></li>
+                <li><a href="monster.html" target="_self">Monster Galery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>D&D Currency Converter</h2>
+            <div class="converter">
+                <input type="number" id="amount" placeholder="Enter amount">
+                <select id="fromCurrency">
+                    <option value="pp">Platinum (pp)</option>
+                    <option value="gp">Gold (gp)</option>
+                    <option value="ep">Electron (ep)</option>
+                    <option value="sp">Silver (sp)</option>
+                    <option value="cp">Copper (cp)</option>
+                </select>
+                <select id="toCurrency">
+                    <option value="pp">Platinum (pp)</option>
+                    <option value="gp">Gold (gp)</option>
+                    <option value="ep">Electron (ep)</option>
+                    <option value="sp">Silver (sp)</option>
+                    <option value="cp">Copper (cp)</option>
+                </select>
+                <button id="convertButton">Convert</button>
+                <div id="result"></div>
+            </div>
+    </main>
+    <footer>
+        <p>WDD231 Class Project</p>
+            <p>Mosiah Andrade</p>
+            <p><span id="currentYear"></span>  Warlock's command</p>
+            <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

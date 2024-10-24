@@ -1,0 +1,240 @@
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --dark: #0B0E13;
+    --blue: #5690A5;
+    --mid-blue: #3A4957;
+    --ligt-blue: #98BEC9;
+    --black: #1B1316;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+h1,h2,h3,h4,h5, a{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bolder;
+    color: #0B0E13;
+  }
+p, li{
+    font-family: "Ubuntu", sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+h2{
+    margin: 20px;
+    font-size: 3rem;
+}
+#galery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.card{
+    width: 450px;
+    height: auto;
+    background-color: var(--ligt-blue);
+    margin: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.907);
+
+    & h3{
+        background-color: #3A4957;
+        color: #98BEC9;
+        padding: 15px;
+    }
+    & .name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    & .cr{
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    & .baseInfo{
+        display: flex;
+        flex-direction: row;
+        font-weight: lighter;
+        font-style: italic;
+        margin-left: 5px;
+        gap: 10px;
+        & .speed{
+            margin-left: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+    & .achp, .mod{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    & .achp{
+        margin: 20px;
+        font-size: 20px;
+    }
+    & .mod{
+        font-size: 25px;
+        text-align: center;
+        & p{
+            border: solid 2px rgba(0, 0, 0, 0.271);
+            width: 20%;
+            background-color: #3a49575e;
+            padding: 7px;
+        }
+    }
+    & .skill, .sense, .language{
+        margin: 20px;
+    }
+    & .actions-container {
+        margin: 20px;
+        & p{
+            margin-top: 20px;
+        }
+    }
+    & button {
+        width: 90%;
+        margin: 20px;
+        height: 50px;
+        background-color: var(--blue);
+        border: none;
+        border-radius: 20px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.907);
+        font-weight: bold;
+        color: var(--black);
+
+    }
+}
+#navigation-Grid button, input, #searchButton{
+    background-color: var(--blue);
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    color: #f3f8f9;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.907);
+}
+#searchButton{
+    margin: 0px;
+}
+#search-bar, #navigation-Grid{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & #scrollToTop{
+        margin-left: 50px;
+        width: 150px;
+    }
+    & #nextButton, #prevButton{
+        width: 200px;
+    }
+
+}
+input{
+    width: 70%;
+    opacity: 70%;
+}
+input::placeholder{
+    color: white;
+    opacity: 100%;
+}
+button:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--blue);
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 70rem){
+    #galery{
+        flex-direction: column;
+    }
+    .card{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        & .mod{
+            width: 100%;
+            font-size: 18px;
+            justify-content: stretch;
+            & p{
+                width: 50px;
+                height: 50px;
+                padding: 0;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        }
+    }
+    
+    #navigation-Grid button, input, #searchButton{
+        background-color: var(--blue);
+        padding: 10px 20px;
+        margin: 20px;
+        border: none;
+        color: #f3f8f9;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.907);
+    }
+    #searchButton{
+        margin: 0px;
+    }
+     #navigation-Grid{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        & #scrollToTop{
+            margin: 0px;
+            margin-left: 10px;
+            width: auto;
+        }
+        & #nextButton, #prevButton{
+            width: auto;
+            margin: 0;
+            margin-right: 20px;
+        }
+    }
+    #search-bar
+    {
+    width: 90%;
+    }
+input{
+        width: 70%;
+        opacity: 70%;
+    }
+    input::placeholder{
+        color: white;
+        opacity: 100%;
+    }
+    button:hover{
+        scale: 1.05;
+        cursor: pointer;
+    }
+}
+
+
