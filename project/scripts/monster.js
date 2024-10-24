@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const galery = document.getElementById("galery");
-let currentPage = 1; // Variável para manter a página atual
+let currentPage = 1; // variable to initial page
 const urlBase = `https://api.open5e.com/v1/monsters/?format=json`;
 
-// Variável para o termo de busca
+// sheach variavle
 let searchTerm = '';
 
-// Função para buscar dados da API
+// function to search data to API
 async function apiFetch(page, search = '') {
-    const url = `${urlBase}&page=${page}&search=${encodeURIComponent(search)}`; // Atualiza a URL com a página atual e o termo de busca
+    const url = `${urlBase}&page=${page}&search=${encodeURIComponent(search)}`; // update the to finde data
     try {
         const response = await fetch(url);
         if (response.ok) {
@@ -30,10 +30,10 @@ async function apiFetch(page, search = '') {
     }
 }
 
-// Função para exibir os resultados
+// Function to show result
 function displayResults(data) {
     data = data.results;
-    let htmlContent = ""; // Inicializa uma string vazia para o conteúdo HTML
+    let htmlContent = ""; // init html 
 
     data.forEach(element => {
         const name = element.name;
@@ -68,7 +68,7 @@ function displayResults(data) {
             return actionsArray.map(action => {
                 let details = `<p><strong> ${action.name}</strong>`;
                 
-                // Verifica se a ação tem bônus de ataque e dado de dano e inclui se houver
+                
                 if (action.attack_bonus) {
                     details += `<br><strong>Attack Bonus:</strong> +${action.attack_bonus}`;
                 }
@@ -81,7 +81,7 @@ function displayResults(data) {
             }).join(''); 
         }
 
-        // Adiciona o HTML para cada monstro
+        // Ads html to each monster
         htmlContent += `
         <div class="card">
             <div class="name">
@@ -128,55 +128,49 @@ function displayResults(data) {
 
     galery.innerHTML = htmlContent;
 
-    // Adiciona os eventos de clique para cada botão de ações
+    // add event to show the actions 
     const toggleButtons = document.querySelectorAll('.toggle-button');
     toggleButtons.forEach((button, index) => {
         button.addEventListener('click', () => {
-            const actionsContainer = button.nextElementSibling; // Seleciona o próximo elemento (actions-container)
+            const actionsContainer = button.nextElementSibling; // Select the next element (actions-container)
             if (actionsContainer.style.display === 'none' || actionsContainer.style.display === '') {
-                actionsContainer.style.display = 'block'; // Mostra o container
-                button.textContent = 'Hidden actions'; // Altera o texto do botão
+                actionsContainer.style.display = 'block'; // show the container
+                button.textContent = 'Hidden actions'; 
             } else {
-                actionsContainer.style.display = 'none'; // Esconde o container
-                button.textContent = 'Action'; // Restaura o texto do botão
+                actionsContainer.style.display = 'none'; // hidder the container
+                button.textContent = 'Action'; 
             }
         });
     });
 }
 
-// Função para atualizar a galeria ao mudar de página
 function updateGallery() {
     apiFetch(currentPage, searchTerm);
 }
 
-// Funções para controlar a navegação
 function nextPage() {
     currentPage++;
     updateGallery();
 }
 
 function previousPage() {
-    if (currentPage > 1) { // Evita que a página atual fique menor que 1
+    if (currentPage > 1) { 
         currentPage--;
         updateGallery();
     }
 }
 
-// Inicializa a galeria na primeira página
 apiFetch(currentPage);
 
-// Cria a barra de busca e a navegação
 function createNavigation() {
     return `
         <div id="navigation-Grid">
             <button id="prevButton">Previous</button>
             <button id="nextButton">Next</button>
-            <button id="scrollToTop">Back to Top</button>
         </div>
     `;
 }
 
-// Cria a barra de busca
 function createSearchBar() {
     return `
         <div id="search-bar">
@@ -186,22 +180,19 @@ function createSearchBar() {
     `;
 }
 
-// Insere a barra de busca e a navegação no início e no final da galeria
 galery.insertAdjacentHTML('beforebegin', createSearchBar() + createNavigation());
 galery.insertAdjacentHTML('afterend', createNavigation());
 
-// Adiciona eventos de clique para os botões de navegação
 document.getElementById('nextButton').addEventListener('click', nextPage);
 document.getElementById('prevButton').addEventListener('click', previousPage);
 
-// Evento de clique para o botão de busca
 document.getElementById('searchButton').addEventListener('click', () => {
-    searchTerm = document.getElementById('searchInput').value; // Obtém o valor da busca
-    currentPage = 1; // Reinicia para a primeira página
-    updateGallery(); // Atualiza a galeria com o novo termo de busca
+    searchTerm = document.getElementById('searchInput').value; 
+    currentPage = 1; 
+    updateGallery(); 
 });
 
-// Opcional: adicionar um evento para buscar ao pressionar Enter
+
 document.getElementById('searchInput').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         searchTerm = e.target.value;
@@ -210,7 +201,3 @@ document.getElementById('searchInput').addEventListener('keypress', (e) => {
     }
 });
 
-// Evento para o botão "Voltar ao Topo"
-document.getElementById('scrollToTop').addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Rolagem suave para o topo
-});
